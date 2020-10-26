@@ -1,3 +1,4 @@
+
 public class MSimpsona extends Thread {
 
     static double a;

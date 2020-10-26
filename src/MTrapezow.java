@@ -17,13 +17,10 @@ public class MTrapezow extends Thread
     {
         h=(b-a)/n;
         calka=0;
-
         for(int i=1;i<n;i++)
         {
-
             //xi
             calka+=fT.funkcja(a+i*h);
         }
     }
-
 }
