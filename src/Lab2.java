@@ -19,6 +19,5 @@ public class Lab2 {
 
         mp.wynik*=mp.h;
         System.out.println("Metoda prostokątów: "+mp.wynik);
-
     }
 }
