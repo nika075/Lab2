@@ -2,25 +2,26 @@ public class MTrapezow extends Thread
 {
     static double a;
     static double b;
-    static double h,calka,t,x;
-    static int n=2;
-    static  double wynik=0;
+    static double h,calka;
     static Funkcja fT=new Funkcja();
-
-    public MTrapezow(double a,double b)
+    static Lab2 lab=new Lab2();
+    static int i;
+    public MTrapezow(double a,double b,int i)
     {
         this.a=a;
         this.b=b;
+        this.i=i;
     }
 
     public void run()
     {
-        h=(b-a)/n;
+        h=(b-a)/lab.n;
         calka=0;
-        for(int i=1;i<n;i++)
-        {
+        //for(int i=1;i<n;i++)
+        //{
             //xi
             calka+=fT.funkcja(a+i*h);
-        }
+
+        //}
     }
 }
